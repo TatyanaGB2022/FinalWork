@@ -36,17 +36,17 @@ string[] newSimbol(string[] stringArray)
   }
   // если да, то вносим данные из введенного массива в результат функции. После присвоения увеличивается 
   //переменная j на 1 и возвращается к циклу for в котором i увеличивается на 1
-  string[] rezult = new string[newSize];
+  string[] rezultSimbol = new string[newSize];
   int j = 0;
   for (int i = 0; i < stringArray.Length; i++)
   {
     if (stringArray[i].Length <= 3)
     {
-      rezult[j] = stringArray[i];
+      rezultSimbol[j] = stringArray[i];
       j++;
     }
   }
-  return rezult;
+  return rezultSimbol;
 }
 
 // выводим элементы массива
